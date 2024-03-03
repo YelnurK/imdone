@@ -75,14 +75,12 @@ if(isset($_POST['logout'])){
 <body>
     <div class="container">
         <div class="profile-info">
-            <img src="profile-picture.jpg" alt="Profile Picture">
+            <img src="Circle-icons-profile.svg.png" alt="Profile Picture">
             <h2>User Profile</h2>
             <p><strong>Username:</strong> <?php echo isset($userData['username']) ? $userData['username'] : 'N/A'; ?></p>
             <p><strong>Email:</strong> <?php echo isset($userData['email']) ? $userData['email'] : 'N/A'; ?></p>
             <!-- You can display additional user information here -->
-            <form method="post">
-                <button type="submit" name='logout' >End session</button>
-            </form>
+                <button type="submit" name='logout' ><a href="homepage.html">Go Back</a></button>
         </div>
     </div>
 </body>

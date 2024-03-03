@@ -23,10 +23,11 @@ if (isset($_POST['loginSubmit'])) {
         $_SESSION["username"] = $row['username'];
          // Assuming 'username' is the column name for the user's username
         echo "success";
-        header('Location: profile.php');
+        header('Location: homepage.html');
         exit(); // Stop further execution
     } else {  
-        echo "<h1> Login failed. Invalid username or password.</h1>";  
+        echo '<script>alert("login failed please register")</script>';
+        header('location:index.html');  
     }   
 }  
 ?>
